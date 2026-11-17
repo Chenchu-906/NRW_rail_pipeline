@@ -1,0 +1,17 @@
+<DataSourcesHistory>
+  <DataSourceFromHistory isRemovedFromProject="false">
+    <data-source source="LOCAL" name="PostgreSQL (CloudSQL Proxy)" uuid="a5bd5c8d-3fe4-4776-80dc-74dd9c4300b7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <driver-ref>postgresql.cloud_sql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>postgresql://postgres.kboqngtvkgtrfmnbckxx:HUe9I54VVDcncxMP@aws-1-eu-west-3.pooler.supabase.com:6543/postgres</jdbc-url>
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>pgpass</auth-provider>
+      <user-name>postgres.kboqngtvkgtrfmnbckxx</user-name>
+      <schema-mapping />
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </DataSourceFromHistory>
+</DataSourcesHistory>
