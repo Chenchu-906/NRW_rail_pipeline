@@ -1,0 +1,23 @@
+name: NRW Rail Live Ingestion
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run DB Timetables ingestion
+        env:
+          DB_CLIENT_ID: ${{ secrets.DB_CLIENT_ID }}
+          DB_API_KEY: ${{ secrets.DB_API_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python Ingestion.py
